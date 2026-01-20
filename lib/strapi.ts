@@ -201,6 +201,20 @@ export async function getContactInfo() {
   });
 }
 
+// ============ TEACHING / COURSES ============
+export async function getCourses() {
+  return fetchAPI('/courses', {
+    sort: ['year:desc', 'order:asc'],
+    populate: '*',
+  });
+}
+
+export async function getCourse(id: string) {
+  return fetchAPI(`/courses/${id}`, {
+    populate: '*',
+  });
+}
+
 // ============ CONTACT FORM (Optional - keep if you have contact page) ============
 export async function submitContactForm(data: {
   name: string;
