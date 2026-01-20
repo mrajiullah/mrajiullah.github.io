@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"E:\\\\BizMaster\")",
+      "Bash(findstr:*)",
+      "Bash(dir /b \"E:\\\\BizMaster\")",
+      "Bash(curl:*)"
+    ]
+  }
+}
